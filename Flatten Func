@@ -1,0 +1,11 @@
+def flatten(a):
+    for x in a:
+        if isinstance(x,list):
+            flatten(x)
+        else:
+            new_list.append(x)
+
+a = ["a",3,7,["nasi","oyle",2],8,9,[[5]]]
+new_list = []
+flatten(a)
+print(new_list)
